@@ -8,6 +8,212 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
+ *= require font-awesome
  *= require_self
  *= require_tree .
+
+
  */
+
+@font-face{
+	font-family:Geometry_Soft_Pro-Bold_N; src: url('Geometry_Soft_Pro-Bold_N.otf');
+}
+
+
+
+ body{
+ 	margin:0px;
+ 	padding: 0px;
+ }
+
+ div#header_container{
+ 	position:fixed; 
+ 	height:89px;
+	width:100%;
+	background-color:blue;
+	z-index: 90;
+
+ }
+
+ header{
+ 	position:fixed; 
+ 	z-index: 90;
+ 	height:100px;
+	width:100%;
+	background-color:blue;
+	font-family: Geometry_Soft_Pro-Bold_N;
+ }
+
+ #header-left{
+ 	line-height: 89px;
+ 	text-align: left;
+ 	float:left;
+ 	font-size: 30px;
+ 	margin:0px;
+ 	width:300px;
+ 	background-color: white;
+ 	padding-left:20px;
+ }
+
+ #header-right{
+ 	line-height: 89px;
+ 	text-align: right;
+ 	float:right;
+ 	margin:0px;
+ }
+
+ #header-right ul{
+ 	list-style: none;
+ 	float: right;
+ }
+
+ #header-right ul li{
+ 	float:left;
+ 	margin-left:20px;
+ 	margin-right: 20px;
+ 	padding: 0px 10px 0px 10px;
+ 	background-color: white;
+ 	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1px;
+ }
+
+ #header-right ul li:last-child{
+ 	margin-right:0px;
+ }
+
+img#profile-joshua{
+	border-radius:50%;
+	height:25px;
+	width:25px;
+}
+
+#home {
+	width: 100%;
+	height: 900px;
+
+	padding: 0;
+	background-size: 100%;
+}
+
+#home-background{
+	width:100%;
+	height:900px;
+	background: url('backgrounds/antarctic_sky.jpg') 50% 0 no-repeat fixed white;
+	position: absolute;
+	opacity: 0.6;
+	padding: 0;
+	background-size: 100%;
+}
+
+div#section-1{
+	padding-top:165px;
+}
+  div#content-1{
+  	width:100%;
+  	height:600px;
+  	background-color: white;
+
+  }
+
+  #content-1 p{
+  	width:90%;
+  	margin: 40px 0px 15px 40px;
+  	font-size: 18px;
+  	line-height: 30px;
+		}
+
+#quora {
+	background: white 50% 0 no-repeat fixed #F1F3E8;
+	position: absolute;
+	top: 900px;
+	background-position: 50% -35px;
+	height:75px;
+	width: 100%;
+
+}
+
+#breathe {
+	background: url('backgrounds/breathe.jpg') 50% 0 no-repeat fixed #F1F3E8;
+	position: absolute;
+	top: 1000px;
+	background-position: 50% -35px;
+}
+
+
+
+#quora #maincontent{
+	text-align: center;
+}
+
+#batman{
+	background: url('backgrounds/grey_wash_wall.png') 50% 0 repeat fixed #F1F3E8;
+	position: absolute;
+	top: 1900px;
+	background-position: 50% -35px;
+}
+
+#social-networks {
+	background: white 50% 0 no-repeat fixed #F1F3E8;
+	position: absolute;
+	top: 2800px;
+	background-position: 50% -35px;
+	height:100px;
+	width: 100%;
+}
+
+#social-networks #maincontent{
+	height:100px;
+}
+
+#social-networks #maincontent ul{
+	list-style: none;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 30px;
+}
+
+#social-networks #maincontent ul li{
+
+	margin:0px 50px 0px 50px;
+  display:inline-block;
+  *display:inline; /*IE7*/
+  *zoom:1; /*IE7*/
+}
+
+#social-networks #maincontent ul li p{
+	color:white;
+}
+
+#social-networks #maincontent ul li a:visited{
+	color:black;
+}
+
+#social-networks #maincontent ul li i#twitter:hover{
+	color:#00aced;
+}
+
+#social-networks #maincontent ul li i#github:hover{
+	color:#0072b1;
+}
+
+#social-networks #maincontent ul li i#linkedin:hover{
+	color:#007bb6;
+}
+
+#social-networks #maincontent ul li i{
+	margin-right:5px;
+	padding-bottom: 10px;
+}
+
+
+
+
+h1#title-quote{
+	color:white;
+	text-align: center;
+	margin:auto;
+	padding-top:50px;
+	padding-bottom:50px;
+	font-family: 'Signika', 'Lucida Grande', Verdana, sans-serif;
+}
