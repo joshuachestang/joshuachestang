@@ -1,0 +1,7 @@
+<%= form_for ContactMeMessage.new, :id => "mailee-form", :method => "post" do |f| %>
+									<%= f.text_field :name %>
+							    <%= f.text_field :email, :id => "EMAIL", :placeholder => "email@email.com"%>
+							    <%= f.text_field :body %>
+								<!-- <input id="EMAIL" label="email" name="EMAIL" placeholder="email@email.com" type="text"> -->
+							    <input name="commit" type="submit" value="submit">
+							<% end %>
